@@ -38,8 +38,6 @@ class Chase:
 			twist.linear.x = distance
 			twist.angular.z = angle
 			self.publisher.publish(twist)
-		
-				
 			
 
 if __name__ == '__main__':
