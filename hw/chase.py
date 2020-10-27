@@ -8,7 +8,6 @@ from rospy import Publisher, Subscriber
 
 class Chase:
 	def __init__(self):
-
 		self.position = Pose()
 		self.publisher = Publisher('/turtle2/cmd_vel', Twist, queue_size=10)
 		self.sub_t1 = Subscriber('/turtle1/pose', Pose, self.chasing)
